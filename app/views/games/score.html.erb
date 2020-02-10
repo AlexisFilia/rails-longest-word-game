@@ -1,0 +1,8 @@
+<h1>Games#score</h1>
+<p><%= @score.html_safe %></p>
+
+<h2>Your score is <%= @result["length"] %>!</h2>
+
+<h2>Your total score is <%= @total_score %>!</h2>
+
+<%= link_to "Back to game", new_path(params: {total_score: @total_score}) %>
